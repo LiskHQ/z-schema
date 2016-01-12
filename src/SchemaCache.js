@@ -93,6 +93,8 @@ exports.getSchema = function (report, schema) {
 };
 
 exports.getSchemaByReference = function (report, key) {
+    return key;
+
     var i = this.referenceCache.length;
     while (i--) {
         if (this.referenceCache[i][0] === key) {
